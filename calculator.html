@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+
+    <title>Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/calculatorScript.js"></script>
+    <link rel="stylesheet" href="css/calculatorSheet.css" />
+    <link href="css/homepage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="background-image"></div>
+    <!-- navbar-->
+    <div class="sidenav">
+        <img class="logo-img" src="img/logo.png" />
+        <a href="index.html">Home</a>
+        <a href="calculator.html">Calcolatrice</a>
+        <a href="geometry.html">Geometria</a>
+        <a href="exercises.html">Esercizi</a>
+        <a href="digitalLibrary.html">Libreria Digitale</a>
+        <a href="treasure_hunt.html" class="goldNavButton">Caccia al Tesoro</a>
+    </div>
+
+  <!--titolo-->
+  <div class="container">
+  <h1>Calcolatrice</h1>
+  </div>
+
+
+    <!-- calcolatrice -->
+
+    <div class="content-body" style="margin-top: -110px;">
+        <div class="container mt-5">
+            <div>
+                <div class="calculator bg-light">
+                    <div id="display" class="calculator-display"></div>
+
+                    <div class="row mt-2">
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('7')">7</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('8')">8</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('9')">9</button></div>
+                        <div class="col-3"><button class="btn btn-warning calculator-button mb-3" onclick="setOperation('/')">/</button></div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('4')">4</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('5')">5</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('6')">6</button></div>
+                        <div class="col-3"><button class="btn btn-warning calculator-button mb-3" onclick="setOperation('*')">*</button></div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('1')">1</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('2')">2</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('3')">3</button></div>
+                        <div class="col-3"><button class="btn btn-warning calculator-button mb-3" onclick="setOperation('-')">-</button></div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('0')">0</button></div>
+                        <div class="col-3"><button class="btn btn-secondary calculator-button mb-3" onclick="appendNumber('.')">.</button></div>
+                        <div class="col-3"><button class="btn btn-danger calculator-button mb-3" onclick="clearDisplay()">C</button></div>
+                        <div class="col-3"><button class="btn btn-warning calculator-button mb-3" onclick="setOperation('+')">+</button></div>
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-9"><button class="btn btn-success calculator-button" onclick="calculate()" style="width: 100%;">=</button></div>
+                        <div class="col-3"><button class="btn btn-warning calculator-button mb-3" onclick="toggleSign()">±</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer -->
+    
+    <footer class="bottom-footer">
+        <div>
+            <i class="bi bi-facebook fs-2"></i>
+            <i class="bi bi-twitter fs-2"></i>
+            <i class="bi bi-instagram fs-2"></i>
+            <i class="bi bi-youtube fs-2"></i>
+        </div>
+        <div>
+            <h2>Geometry Helper è un progetto di Team MatLab ™</h2>
+            <div style="text-align: center;">
+                <a href="https://www.linkedin.com/in/alessio-cappai-59274952/" target="_blank">Alessio Cappai</a> - <a href="https://www.linkedin.com/in/daniel-camuffo-79359826b" target="_blank">Daniel Camuffo</a> - <a href="https://www.linkedin.com/in/daniele-schiavoni-871b84181/" target="_blank">Daniele Schiavoni</a> - <a href="https://www.linkedin.com/in/mauro-gariazzo-976a241b8/" target="_blank">Mauro Gariazzo</a> - <a href="https://www.linkedin.com/in/tidiane-ba-9829a124b/" target="_blank">Amadou</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

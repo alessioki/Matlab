@@ -1,0 +1,27 @@
+.full-width-card {
+            width: calc(100vw - 4rem); /* Sottrae il margine a destra e sinistra */
+            margin-left: calc(50% - 50vw + 2rem); /* Centra la card con margini */
+            max-width: 600px;
+            padding:20px;
+        }
+
+        .card-header {
+            background: #8d9898;
+        }
+
+.error {
+    outline: 2px solid red;
+}
+
+.bottom-footer {
+    grid-area: footer;
+    padding: 5vh;
+    background-color: rgba(0,122,57,1);
+    width: 100%;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}

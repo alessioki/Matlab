@@ -1,0 +1,14 @@
+
+.container img, .container iframe
+{
+    height: 400px; /* Altezza fissa per le immagini */
+    width:100%;
+    object-fit:cover;
+    display: block; /* Assicura che l'elemento sia un blocco */
+    margin: 0 auto;
+}
+
+.card
+{
+    margin-bottom: 40px;
+}
